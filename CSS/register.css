@@ -1,0 +1,188 @@
+:root
+{
+    --primary-color:#fff ;
+    --secondary-color:#000;
+    --accent-color:#458cf4;
+    --acc:#f0f3f8;
+    --accc:#cdd3e1; 
+    --h1-fs:64px;
+    --h1-lh:72px;
+    --p-fs:18px;
+    --p-lh:30px;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background: #458cf4;
+
+}
+.container
+{
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    border-radius: 2mm;
+    position: relative;
+    margin: 4% auto;
+    /* padding: 20px; */
+    overflow: hidden;
+}
+.container h3
+{
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container form
+{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 85%;
+    transition: 0.5s;
+}
+form .info
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px ;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+} 
+
+.input-field
+{
+    display: flex;
+    flex-direction: column;
+}
+.input-field label
+{
+    color: #555555;
+}
+
+.input-field input
+{
+  height: 45px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1.2mm;
+  padding-left: 15px;
+  transition: all 400ms ease;
+}
+.input-field input[type="file"]
+{
+  height: 45px;
+  margin-top: 5px;
+  border: 0;
+  outline: 0;
+  border-radius: 1.2mm;
+  padding-left: 15px;
+  transition: all 400ms ease;
+}
+
+.input-field input:focus
+{
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.input-field select
+{
+    height: 45px;
+    background-color: #458cf4;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+.cta-btn
+{
+    position: relative;
+    float: right;
+    height: 45px ;
+    width: 30%;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: #458cf4;
+    border-radius: 1mm;
+    margin: 10px auto; 
+    margin-left: 15px;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+   
+}
+.cta-btn:after
+{
+  
+ content: "";
+  background: #99c0fa;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.cta-btn:active:after
+{
+    padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+#form-2
+{
+    left: 650px;
+}
+#form-3
+{
+    left: 650px;
+}
+.step-indicator
+{
+    width: 30%;
+    background: black;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 0 5mm 5mm 0;
+}
+.step 
+{
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 120px;
+}
+#progess
+{
+    position: absolute;
+    background-color: #458cf4;
+    height: 100%;
+    width: 60px;
+    border-radius : 0 5mm 5mm 0;
+    transition: 0.5s;
+    font-weight: bold;
+}

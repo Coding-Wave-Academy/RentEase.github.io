@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>rentease.cm | Registration </title>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="#" id="form-1"  >
+        
+            <h3>Personal Details</h3>
+            <div class="info">
+                <div class="input-field">
+                    <label>FirstName</label>
+                    <input type="text" placeholder="Enter your firstname" required>
+                </div>
+                <div class="input-field">
+                    <label>LastName</label>
+                    <input type="text" placeholder="Enter your lastname" required>
+                </div>
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-field">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="000-000-000" pattern="[0-9][0-9][0-9]" required>
+                </div>
+                <div class="input-field">
+                    <label>Gender</label>
+                    <input type="text" placeholder="e.g Male" required>
+                </div>
+                <div class="input-field">
+                    <label>Occupation</label>
+                    <input type="email" placeholder="Enter your occupation">
+                </div>
+            </div>
+     
+        <button class="cta-btn" id="nextbtn1" type="button">Next</button>
+        </form>
+
+
+        <form action="#" id="form-2" >
+        
+            <h3>ID & Address Details</h3>
+            <div class="info">
+                <div class="input-field">
+                    <label>ID Type</label>
+                    <input type="text" placeholder=" National, Passport, Driver's License etc" required>
+                </div>
+                <div class="input-field">
+                    <label>ID Number</label>
+                    <input type="number" placeholder="11223344556677889900" required>
+                </div>
+                <div class="input-field">
+                    <label>Expiry Date</label>
+                    <input type="date" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="input-field">
+                    <label>Region</label>
+                    <input type="text" placeholder="South West" >
+                </div>
+                <div class="input-field">
+                    <label>Town/City</label>
+                    <input type="text" placeholder="Buea">
+                </div>
+                <div class="input-field">
+                    <label>Location</label>
+                    <input type="text" placeholder="UB South">
+                </div>
+            </div>
+           
+        <button class="cta-btn" id="nextbtn2" type="button">Next</button>
+        <button class="cta-btn" id="prevbtn1" type="button">Previous</button>
+        </form>
+
+
+
+        <form action="#" id="form-3">
+        
+            <h3>Profile Details</h3>
+            <div class="info">
+                <div class="input-field">
+                    <label>UserName</label>
+                    <input type="text" placeholder=" Enter your username" required>
+                </div>
+                <div class="input-field">
+                    <label>Password</label>
+                    <input type="password"  required>
+                </div>
+                <div class="input-field">
+                    <label>Re-Type Password</label>
+                    <input type="password" required>
+                </div>
+                <div class="input-field">
+                    <label>Upload Profile Picture</label>
+                    <input type="file" >
+                </div>
+                <div class="input-field">
+                    <label>Account Type</label>
+                   <select name="account" id="acctype">
+                    <option value="0">Landlord</option>
+                    <option value="1">Tenant</option>
+                   </select>
+                </div>
+                
+            </div>
+           
+        <button class="cta-btn" id="nextbtn" type="submit">submit</button>
+        <button class="cta-btn" id="prevbtn2" type="button">Previous</button>
+        </form>
+
+
+<div class="step-indicator">
+    <div id="progess"></div>
+    <div class="step"><small>Personal</small></div>
+    <div class="step"><small>ID</small></div>
+    <div class="step"><small>Profile</small></div>
+
+</div>
+
+
+
+       
+        
+
+    </div>
+    
+</body>
+<script>
+
+var Form1 = document.getElementById("form-1");
+var Form2 = document.getElementById("form-2");
+var Form3 = document.getElementById("form-3");
+
+const Nextbtn1 =  document.getElementById("nextbtn1");
+const Nextbtn2 =  document.getElementById("nextbtn2");
+const prevbtn1 =  document.getElementById("prevbtn1");
+var prevbtn2 =  document.getElementById("prevbtn2");
+
+var progress =  document.getElementById("progess");
+
+
+
+Nextbtn1.addEventListener("click", function()
+{
+    Form1.style.left = "-550px";
+    Form2.style.left = "40px";
+    progress.style.width = "90px"
+    progress.style.borderRadius = "0 5mm 5mm 0";
+})
+Nextbtn2.addEventListener("click", function()
+{
+    Form2.style.left = "-550px";
+    Form3.style.left = "40px";
+    progress.style.width = "150px";
+    progress.style.borderRadius = "0 5mm 5mm 0";
+})
+
+prevbtn1.addEventListener("click", function()
+{
+    Form1.style.left = "40px";
+    Form2.style.left = "550px";
+    progress.style.width = "60px"
+    progress.style.borderRadius = "0 5mm 5mm 0";
+    
+})
+prevbtn2.addEventListener("click", function()
+{
+    Form2.style.left = "40px";
+    Form3.style.left = "550px";
+    progress.style.width = "90px"
+    progress.style.borderRadius = "0 5mm 5mm 0";
+    
+})
+
+</script>
+</html>

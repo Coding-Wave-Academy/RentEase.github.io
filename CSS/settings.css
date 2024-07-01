@@ -1,0 +1,438 @@
+:root
+{
+    --primary-color:#fff ;
+    --secondary-color:#000;
+    --accent-color:#458cf4;
+    --acc:#f0f3f8;
+    --accc:#cdd3e1; 
+    --h1-fs:64px;
+    --h1-lh:72px;
+    --p-fs:18px;
+    --p-lh:30px;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body
+{
+    background: #fdfdfd;
+}
+
+span
+{
+    color: #458cf4;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: static;
+    padding: 30px 20px;
+}
+
+.header .join-cta
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.join-cta form
+{
+    background: #e7eaf0;
+    border-radius: 5mm;
+    box-shadow: 0 4px 20px #0000002e;
+}
+
+.join-cta form input
+{
+    border-radius: 5mm;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+
+}
+
+.mailbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10px;
+    
+}
+.mailbox img
+{
+    width: 25px;
+    
+}
+
+.mailbox .info-dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    left: 19px;
+    top: 0;
+}
+.join-cta .user-icon
+{
+    width: 30px;
+    border-radius: 50%;
+}
+.join-cta .user
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.container .side-nav
+{
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  top: 0;
+ z-index: 1;
+  left: 0;
+}
+.side-nav .logo h1
+{
+    font-size: 1.6em;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.side-nav ul
+{
+   padding: 0 10px;
+  
+}
+.side-nav ul li
+{
+    margin: 40px 0;
+    width: 180px;
+}
+.side-nav ul li a
+{
+    
+    color: #458cf4;
+    padding: 0 30px;
+    
+}
+.side-nav  button
+{
+    
+   width: 180px;
+   background: transparent;
+  border: none;
+   border-radius: 2mm;
+   padding: 10px;
+   font-size: 1em;
+   color: #458cf4;
+   
+    
+}
+
+.side-nav button:hover
+{
+    
+    background: #458bf4cd;
+    color: black;
+    transition: 0.4s;
+} 
+.side-nav button:hover a
+{
+    
+    
+    color: black;
+    transition: 0.4s;
+}
+.side-nav .active
+{
+    background: #458bf473;
+   
+    transition: 0.4s;
+}
+
+.container .other-side-content{
+    margin-left: 210px;
+    background-color: #f6f5f5;
+    border-radius: 5mm 0 0 5mm;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.container .user-info
+{
+    padding: 10px;
+    border-radius: 5mm;
+    background: #fff;
+    width: 100%;
+    height: 700px;
+    
+}
+
+.user-info .user-profile
+{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.user-info .user-profile img
+{
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+.user-profile a
+{
+    color: #458cf4;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.user-profile h2
+{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.user-profile p
+{
+    color: #8f8e8ebc;
+    font-size: 15px;
+    margin: 5px auto;
+}
+
+.user-info .user-notify
+{
+padding: 10px;
+}
+
+.user-info .user-notify h2
+{
+    font-size: 20px;
+    margin: 5px;
+}
+.user-info .user-notify hr
+{
+color: #8d8f94c6;
+    margin: 10px auto;
+}
+
+.user-notify .notify-card .notify-btn
+{
+    display: flex;
+   justify-content: space-between;
+   margin: 20px auto;
+}
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+
+  .container .user-full-info
+  {
+    height: 700px;
+    background: white;
+    border-radius: 5mm;
+    padding: 30px;
+  }
+  .user-full-info .profile-title
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  }
+  .user-full-info h1
+  {
+    font-size: 20px;
+    
+  }
+  .user-full-info .save-btn
+  {
+    background: transparent;
+    text-align: center;
+    border: 2px solid #458cf4;
+    color: #2196F3;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 1mm;
+  }
+  .profile-card .profile-links
+  {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+  .profile-links a{
+    color: #000;
+  }
+  .profile-links .main-link
+  {
+    border-bottom: 2px solid #458cf4;
+    color: #458cf4;
+    padding: 5px 0;
+  }
+ 
+  .profile-card .profile-form
+  {
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    outline: 0;
+    border: 0;
+    
+    
+  }
+
+  .profile-form .usernames
+  {
+    display: flex;
+    width: 100%;
+    flex-direction: row; 
+    gap: 10px;
+
+  }
+  .sub-username
+  {
+
+    width: 100%;
+    margin: 10px auto;
+  }
+  .profile-form .usernames .sub-username input
+  {
+
+    width: 100%;
+    padding: 15px;
+    border-radius: 2mm;
+    margin-top: 10px;
+    outline: 0;
+    border: 2px solid #ccc;
+  }
+ .profile-form .extend-info
+ {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .profile-form .extend-info input
+ {
+    padding: 15px 20px ;
+    border-radius: 2mm;
+    outline: 0;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+ }
+ .profile-form .pass-card
+ {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+ }
+ .pass-card .pass
+ {
+    width: 100%;
+    margin: 10px auto;
+ }
+ .profile-form .pass-card .pass input
+  {
+
+    width: 100%;
+    padding: 15px;
+    border-radius: 2mm;
+    margin-top: 10px;
+    outline: 0;
+    border: 2px solid #ccc;
+  }
+ 
+  

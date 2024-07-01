@@ -1,0 +1,306 @@
+:root
+{
+    --primary-color:#fff ;
+    --secondary-color:#000;
+    --accent-color:#458cf4;
+    --acc:#f0f3f8;
+    --accc:#cdd3e1; 
+    --h1-fs:64px;
+    --h1-lh:72px;
+    --p-fs:18px;
+    --p-lh:30px;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body
+{
+    background: #fdfdfd;
+}
+
+span
+{
+    color: #458cf4;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: static;
+    padding: 30px 20px;
+}
+
+.header .join-cta
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.join-cta form
+{
+    background: #e7eaf0;
+    border-radius: 5mm;
+    box-shadow: 0 4px 20px #0000002e;
+}
+
+.join-cta form input
+{
+    border-radius: 5mm;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+
+}
+
+.mailbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10px;
+    
+}
+.mailbox img
+{
+    width: 25px;
+    
+}
+
+.mailbox .info-dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    left: 19px;
+    top: 0;
+}
+.join-cta .user-icon
+{
+    width: 30px;
+    border-radius: 50%;
+}
+.join-cta .user
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.container .side-nav
+{
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  top: 0;
+ z-index: 1;
+  left: 0;
+}
+.side-nav .logo h1
+{
+    font-size: 1.6em;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.side-nav ul
+{
+   padding: 0 10px;
+  
+}
+.side-nav ul li
+{
+    margin: 40px 0;
+    width: 180px;
+}
+.side-nav ul li a
+{
+    
+    color: #458cf4;
+    padding: 0 30px;
+    
+}
+.side-nav  button
+{
+    
+   width: 180px;
+   background: transparent;
+  border: none;
+   border-radius: 2mm;
+   padding: 10px;
+   font-size: 1em;
+   color: #458cf4;
+   
+    
+}
+
+.side-nav button:hover
+{
+    
+    background: #458bf4cd;
+    color: black;
+    transition: 0.4s;
+} 
+.side-nav button:hover a
+{
+    
+    
+    color: black;
+    transition: 0.4s;
+}
+.side-nav .active
+{
+    background: #458bf473;
+   
+    transition: 0.4s;
+}
+
+.container .other-side-content{
+    margin-left: 210px;
+    background-color: #f6f5f5;
+    border-radius: 5mm 0 0 5mm;
+    padding: 10px;
+    align-items: center;
+}
+
+.other-side-content .housing-grid .pop-house
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.container .pop-house
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 20px;
+}
+.pop-house .pop-house-card
+{
+    background: #ebebebcb;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.174) 0px 15px 38px,rgba(0, 0, 0, 0.081) 0px 10px 11px ;
+    border-radius: 2mm;
+    padding: 10px;
+}
+.pop-house-card .locate
+{
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: var(--primary-color);
+    padding:5px 20px;
+    border-radius: 2mm;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+   
+}
+.locate .locate-img
+{
+    width: 20px;
+}
+
+.pop-house-card .pop-img img
+{
+
+height: fit-content;
+border-radius: 2mm;
+margin: 10px auto;
+width: 100%;
+
+}
+.pop-house-card .pop-img
+{
+    position: relative;
+    box-sizing: border-box;
+}
+.pop-house-card .h-rank h2
+{
+font-size: 16px;
+color: #a8a8a8;
+margin: 5px auto;
+}
+.pop-house-card .h-rank h1
+{
+font-size: 1.6em;
+color: #000;
+margin: 5px auto;
+}
+.h-type
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px auto;
+    margin-bottom: 50px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.h-type .sub-type
+{
+    background-color: #becde348;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5mm;
+    color: #999999;
+    
+}
+.price
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.price .price-btn
+{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5mm;
+    background: #458cf4;
+    color: white;
+   
+}
+.price .price-btn a
+{
+    color: white;
+}
+.price .price-txt
+{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 10px;
+}
